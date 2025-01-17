@@ -54,6 +54,8 @@ ul {
 /*-------Header-------*/
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .header-container {
@@ -87,6 +89,56 @@ ul {
 .menu {
     display: flex;
     gap: 40px;
+    position: relative;
+}
+
+
+.menu-item-studio:hover .menu-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+.menu-item-studio .menu-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+.menu-item-portfolio:hover .menu-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+    width: 66px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+.menu-item-contacts:hover .menu-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 67px;
+    height: 4px;
+    background-color: #4d5ae5;
+    border-radius: 2px;
 }
 
 .menu-link {
@@ -97,6 +149,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    position: relative;
 }
 
 .menu-link:hover,
@@ -138,6 +191,11 @@ ul {
     padding: 188px 0;
     background-color: #2e2f42;
     color: #ffffff;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('/images/people-office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title {
