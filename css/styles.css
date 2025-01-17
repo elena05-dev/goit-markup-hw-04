@@ -195,7 +195,7 @@ ul {
     background-position: center;
     background-size: cover;
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('images/people-office.jpg');
+        url('../images/people-office.jpg');
 }
 
 .main-title {
@@ -251,6 +251,8 @@ ul {
 .service {
     width: calc((100% - 72px) / 4);
 }
+
+
 
 .section-service-title {
     margin-bottom: 8px;
