@@ -252,7 +252,13 @@ ul {
     width: calc((100% - 72px) / 4);
 }
 
-
+.icon {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    fill: currentColor;
+    fill: #ff5722;
+}
 
 .section-service-title {
     margin-bottom: 8px;
