@@ -272,6 +272,8 @@ ul {
     opacity: 1;
 }
 
+
+
 .section-service-title {
     margin-bottom: 8px;
     font-size: 20px;
@@ -319,11 +321,14 @@ ul {
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     background-color: #ffffff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 
 }
 
+
+
 .name-person {
-    padding-top: 32px;
     text-align: center;
 }
 
@@ -345,26 +350,37 @@ ul {
     color: #434455;
 }
 
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 232;
+    height: 40px;
+    margin: 8px 16px;
+
+}
+
 .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
-
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4d5ae5;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .traling-icons {
-
-
-    border-radius: 50%;
-    background-color: #4d5ae5;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    fill: #fff;
 
 }
-
-
 
 .section-service {
     background-color: #ffffff;
@@ -388,7 +404,9 @@ ul {
 
 .list-item {
     width: calc((100% - 48px) / 3);
+
 }
+
 
 .name-item {
     padding: 32px 16px;
@@ -410,10 +428,50 @@ ul {
     color: #434455;
 }
 
+.overlay {
+    padding: 8px;
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 360px;
+    height: 420px;
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-right: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay:hover .overlay {
+    transform: translateY(0)
+}
+
 /*-----Footer-----*/
 .page-footer {
     padding: 100px 0 100px;
     background-color: #2e2f42;
+}
+
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    gap: 120px;
+}
+
+
+.social-footer {
+    width: 208px;
 }
 
 .logo-footer {
@@ -426,6 +484,7 @@ ul {
     letter-spacing: 0.03em;
     color: #4d5ae5;
     text-transform: uppercase;
+
 }
 
 .text-footer {
@@ -437,6 +496,38 @@ ul {
     letter-spacing: 0.02em;
 }
 
+.text-media {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
 .studio {
     color: #f4f4fd
+}
+
+.wrap-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 232;
+    height: 40px;
+    margin-top: 16px;
+
+}
+
+.traling-icons-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #31d0aa;
+
 }
