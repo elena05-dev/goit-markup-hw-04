@@ -252,12 +252,24 @@ ul {
     width: calc((100% - 72px) / 4);
 }
 
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+}
+
 .icon {
     width: 64px;
     height: 64px;
     display: inline-block;
     fill: currentColor;
-    fill: #ff5722;
+    fill: #2e2f42;
+    opacity: 1;
 }
 
 .section-service-title {
@@ -311,9 +323,10 @@ ul {
 }
 
 .name-person {
-    padding: 32px 0;
+    padding-top: 32px;
     text-align: center;
 }
+
 
 .section-title {
     margin-bottom: 8px;
@@ -331,6 +344,27 @@ ul {
     text-align: center;
     color: #434455;
 }
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+.traling-icons {
+
+
+    border-radius: 50%;
+    background-color: #4d5ae5;
+
+
+
+}
+
+
 
 .section-service {
     background-color: #ffffff;
