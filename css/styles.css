@@ -150,6 +150,8 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
     position: relative;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms;
 }
 
 .menu-link:hover,
@@ -405,6 +407,7 @@ ul {
 .list-item {
     width: calc((100% - 48px) / 3);
 
+
 }
 
 
@@ -455,6 +458,33 @@ ul {
 
 .img-overlay:hover .overlay {
     transform: translateY(0)
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.icon-container:hover {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms;
+}
+
+.icon-finger {
+    position: absolute;
+    bottom: -8px;
+    right: 13px;
+    width: 16px;
+    height: 16px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms;
+
+}
+
+.icon-finger:hover {
+    transform: scale(1.2);
 }
 
 /*-----Footer-----*/
