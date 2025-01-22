@@ -112,7 +112,7 @@ ul {
 .menu-item-studio .menu-link-studio::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0;
     transform: translateX(-50%);
     bottom: -1px;
     width: 48px;
