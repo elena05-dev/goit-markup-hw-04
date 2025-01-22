@@ -112,7 +112,7 @@ ul {
 .menu-item-studio .menu-link-studio::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%;
     transform: translateX(-50%);
     bottom: -1px;
     width: 48px;
@@ -169,7 +169,6 @@ ul {
     color: #404bbf;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms;
     left: 0;
 }
 
@@ -299,8 +298,6 @@ ul {
     fill: #2e2f42;
     opacity: 1;
 }
-
-
 
 .section-service-title {
     margin-bottom: 8px;
@@ -432,7 +429,6 @@ ul {
     margin: 0;
 }
 
-
 .name-item {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -476,7 +472,6 @@ ul {
     position: relative;
     overflow: hidden;
     width: 100%;
-
 }
 
 .overlay {
@@ -499,9 +494,6 @@ ul {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-
 /*-----Footer-----*/
 .page-footer {
     padding: 100px 0 100px;
@@ -511,7 +503,6 @@ ul {
 .container-footer {
     display: flex;
     align-items: baseline;
-
 }
 
 .logo-text {
@@ -571,9 +562,6 @@ ul {
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 
 .link-footer:hover {
     background: #31d0aa;
